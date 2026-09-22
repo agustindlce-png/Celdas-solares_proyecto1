@@ -24,7 +24,9 @@ import os
 
 from constantes import H_PLANCK, C_LUZ, Q
 
-_DATA_PATH = os.path.join(os.path.dirname(__file__), "data", "ASTMG173.csv")
+import os
+_HERE = os.path.dirname(os.path.abspath(__file__))
+_DATA_PATH = os.path.join(_HERE, "ASTMG173.csv")
 
 FUENTE_ESPECTRO = (
     "ASTM G173-03 Reference Spectra Derived from SMARTS v2.9.2 "
